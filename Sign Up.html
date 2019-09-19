@@ -2,29 +2,64 @@
 <html>
 <head>
 <title> Sign up form </title>
+<style>
+body{
+background: url("background.jpg");
+background-size: cover;
+}
+h1{
+color: white;
+}
+.input1{
+font-size: 15px;
+height: 20px;
+width: 300px;
+padding: 5px;
+border: 3px solid purple;
+}
+.input2{
+font-size: 15px;
+height: 20px;
+width: 136px;
+padding: 5px;
+border: 3px solid purple;
+}
+.button{
+font-size: 15px;
+font-weight: 800;
+height: 40px;
+width: 300px;
+background-color: yellow;
+border: 2px solid yellow;
+}
+div{
+height: 40px;
+background: black;
+color: white;
+text-align: center;
+}
+.h1{
+padding: 0;
+margin: 0;
+}
+</style>
 </head>
 <body>
+<header>
+<div>
+<h1 class="h1"> Mickey Blogs </h1>
+</div><br>
+</header>
 <center>
-<h1> Sign Up </h1>
+<h1> Please complete your details</h1><br>
 <form action="Blog Page.html">
-First Name:* <br>
-<input type="text" placeholder="First Name" required><br><br>
-Last Name: <br>
-<input type="text" placeholder="Last Name"><br><br>
-User Name:* <br>
-<input type="text" placeholder="User Name" required><br><br>
-Gender: <br>
-<input type="radio" name="G">Male
-<input type="radio" name="G">Female
-<input type="radio" name="G">Others<br><br>
-Email:* <br>
-<input type="email" placeholder="abc@gmail.com" required><br><br>
-Contact Number: <br>
-<input type="number"> <br><br>
-Password:* <br>
-<input type="password" required><br><br>
-<input type="submit" value="Submit"> &nbsp; &nbsp;
-<input type="reset" value="Reset">
+<input type="email" placeholder="Your email address" required class="input1"><br><br>
+<input type="text" placeholder="Create a User Name" required class="input1"><br><br>
+<input type="password" placeholder="Create a Password" required class="input1"><br><br>
+<input type="text" placeholder="First Name" required class="input2"> &nbsp;
+<input type="text" placeholder="Last Name" class="input2"><br><br>
+<input type="checkbox"> Keep me Logged in when using this Computer<br><br>
+<input type="submit" value="Complete Sign-Up" class="button">
 </form>
 </center>
 </body>
