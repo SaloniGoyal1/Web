@@ -12,6 +12,9 @@ color: white;
 h1{
 font-size: 60px;
 }
+a{
+color: white;
+}
 img{
 margin: 30px;
 border: 2px solid black;
@@ -21,6 +24,39 @@ border-radius: 30%;
 }
 ul{
 list-style: none;
+margin: 0;
+padding: 10px;
+overflow: hidden;
+background: black;
+<!--background: rgba(25,10,255,0.1);-->
+}
+li{
+display: inline;
+font-family: verdana;
+font-weight:700;
+font-size: 20px; 
+padding: 40px;
+}
+li:hover{
+background: green;
+}
+article{
+max-width:500px;
+padding: 20px;
+margin: 0 auto;
+text-align: justify;
+background: pink;
+}
+@media (max-width: 500px){
+body{
+background-color: rgba(0, 255, 0, 0.4);
+}
+li{
+display: block;
+}
+h1{
+font-size: 40px;
+}
 }
 </style>
 </head>
@@ -29,24 +65,26 @@ list-style: none;
 <img src="mickey-mouse.jpg">
 <h1> Mickey Blog </h1>
 <ul>
-  <li>About Us</li>
-  <li>Blogs</li>
-  <li>Contact Us</li>
+  <li><a href="">About Us</a></li>
+  <li><a href="">Blogs</a></li>
+  <li><a href="">Contact Us</a></li>
 </ul>
 </header>
 <article>
 <h2>First Blog</h2>
-
 <div><p>This text is really long and the height of its container is only 300 pixels. Therefore, a scrollbar is added to 
 help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
-exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
-
+exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<button>Like</button></div>
+</article>
+<article>
 <h2>Second Blog</h2>
 <div><p>This text is really long and the height of its container is only 300 pixels. Therefore, a scrollbar is added to 
 help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
-exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<button>Like</button></div>
 </article>
 </body>
 </html>
